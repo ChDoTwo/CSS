@@ -1,0 +1,41 @@
+/* CSS RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+*::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ol, li, ul { list-style: none; }
+a { text-decoration: none; color: inherit; cursor: pointer; }
+html, body { font-size: 10px; background: #fff; color: #000; }
+
+/* scrollbar 숨김 */
+body.scrollbar_hide { -ms-overflow-style: none; }
+body.scrollbar_hide::-webkit-scrollbar { display: none; }
+
+/* width, height */
+.w-100 { width: 100%; }
+.w-50 { width: 50%; }
+.h-100 { height: 100%; }
+.h-50 { height: 50; }
+
+/********** Layout */
+/* flex set */
+.dp_flex { display: flex; }
+.flex_w_center { display: flex; justify-content: center; width: 100%; }
+.flex_h_center { display: flex; align-items: center; height: 100%; }
+.flex_center { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+/* Grid Set */
+.dp_grid { display: grid; }
+.grid-col { grid-template-columns: repeat(attr()); }
+.grid-col-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-col-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-col-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-col-6 { grid-template-columns: repeat(6, 1fr); }
+.grid-row-2 { grid-template-rows: repeat(2, 1fr); }
+.grid-row-3 { grid-template-rows: repeat(3, 1fr); }
+.grid-row-4 { grid-template-rows: repeat(4, 1fr); }
+.grid-row-6 { grid-template-rows: repeat(6, 1fr); }
+
+/* Position Set */
+.Pos_w_center { position: absolute; left: 50%; transform: translateX(-50%); }
+.Pos_h_center { position: absolute; top: 50%; transform: translateY(-50%); }
+.Pos_center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+

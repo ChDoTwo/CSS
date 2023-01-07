@@ -1,0 +1,6 @@
+/* HEADER STYLE 지정 */
+#HEADER_AREA { position: fixed; left: 0; top: 0; display: block; width: 100%; height: 6rem; padding: 0 5%; }
+#HEADER_AREA.scroll_down { }
+
+/* HEADER LOGO */
+#LOGO { font-size: 3.4rem; font-weight: 700; }
